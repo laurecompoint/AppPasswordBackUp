@@ -11,13 +11,16 @@ import UIKit
 class MainViewController: UIViewController {
     
     var credentialCollection: [Credentials] = []
+    var selectedPassword: Credentials?
+    @IBOutlet weak var tableView: UITableView!
     override func viewDidLoad() {
         super.viewDidLoad()
+         tableView.delegate = self
         FireDB().getCredentialsCollection { (credentialCollection, error) in
             if let error = error {
                 
-              self.presentAlert(title: "error", message: error)
-              return
+                self.presentAlert(title: "error", message: error)
+                return
             }
             guard let credentialCollection = credentialCollection else{
                 self.presentAlert(title: "error", message: "error indeterminer")
@@ -25,11 +28,18 @@ class MainViewController: UIViewController {
             }
             self.credentialCollection = credentialCollection
             //recharger les donnee table view
-            self.TableView.reloadData()
+            self.tableView.reloadData()
         }
     }
-    
-    @IBOutlet weak var TableView: UITableView!
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+       
+        guard segue.identifier == "segueToDetail", let selectedPassword = self.selectedPassword else { return }
+        let detailVC = segue.destination as! DetailViewController
+       detailVC.credentialCollection = selectedPassword
+
+        
+        
+    }
     @IBAction func logoutBtnDidPressed(_ sender: Any) {
         if let error = FireAuth().signOut() {
             let alertVC = UIAlertController(title: "Erreur !", message: error, preferredStyle: .alert)
@@ -39,6 +49,7 @@ class MainViewController: UIViewController {
         }
         navigationController?.popViewController(animated: true)
     }
+    
     
 
 }
@@ -58,4 +69,22 @@ extension MainViewController: UITableViewDataSource {
 
         return cell
     }
+}
+extension MainViewController: UITableViewDelegate {
+//    func tableView(_ tableView: UITableView, commit editingStyle: UITableViewCell.EditingStyle, forRowAt indexPath: IndexPath) {
+//
+//        print("DELETE")
+//       credentialCollection.remove(at: indexPath.row)
+//        tableView.deleteRows(at: [indexPath], with: .automatic)
+//
+//    }
+    func tableView(_ tableView: UITableView,  commit editingStyle: UITableViewCell.EditingStyle, forRowAt indexPath: IndexPath) {
+        print("SELECT")
+        
+        self.selectedPassword = credentialCollection[indexPath.row]
+        performSegue(withIdentifier: "segueToDetail", sender: self)
+    }
+
+    
+    
 }

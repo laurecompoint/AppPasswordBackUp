@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		2D0206B62463EF2F009CC663 /* MainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2D0206B52463EF2F009CC663 /* MainViewController.swift */; };
+		2D3F1A352489086A006D354C /* DetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2D3F1A342489086A006D354C /* DetailViewController.swift */; };
 		2D4830382451909300A45FDF /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2D4830372451909300A45FDF /* AppDelegate.swift */; };
 		2D48303A2451909300A45FDF /* AuthViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2D4830392451909300A45FDF /* AuthViewController.swift */; };
 		2D48303D2451909300A45FDF /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2D48303B2451909300A45FDF /* Main.storyboard */; };
@@ -24,6 +25,7 @@
 
 /* Begin PBXFileReference section */
 		2D0206B52463EF2F009CC663 /* MainViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainViewController.swift; sourceTree = "<group>"; };
+		2D3F1A342489086A006D354C /* DetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailViewController.swift; sourceTree = "<group>"; };
 		2D4830342451909300A45FDF /* PasswordBackUp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = PasswordBackUp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		2D4830372451909300A45FDF /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		2D4830392451909300A45FDF /* AuthViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthViewController.swift; sourceTree = "<group>"; };
@@ -81,6 +83,7 @@
 				2D0206B52463EF2F009CC663 /* MainViewController.swift */,
 				2DF4564E246D3BC100E33D74 /* CreateViewController.swift */,
 				2D4E1FDB2488D05300F53087 /* ExtentionsUiViewController.swift */,
+				2D3F1A342489086A006D354C /* DetailViewController.swift */,
 			);
 			path = Controler;
 			sourceTree = "<group>";
@@ -259,6 +262,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				2D3F1A352489086A006D354C /* DetailViewController.swift in Sources */,
 				2DF45645246D25EE00E33D74 /* FireDB.swift in Sources */,
 				2D48303A2451909300A45FDF /* AuthViewController.swift in Sources */,
 				2D4E1FDC2488D05300F53087 /* ExtentionsUiViewController.swift in Sources */,
