@@ -9,9 +9,24 @@
 import UIKit
 
 class MainViewController: UIViewController {
+    
+    var credentialCollection: [Credentials] = []
     override func viewDidLoad() {
         super.viewDidLoad()
-         
+        FireDB().getCredentialsCollection { (credentialCollection, error) in
+            if let error = error {
+                
+              self.presentAlert(title: "error", message: error)
+              return
+            }
+            guard let credentialCollection = credentialCollection else{
+                self.presentAlert(title: "error", message: "error indeterminer")
+                return
+            }
+            self.credentialCollection = credentialCollection
+            //recharger les donnee table view
+            self.TableView.reloadData()
+        }
     }
     
     @IBOutlet weak var TableView: UITableView!
@@ -33,18 +48,14 @@ extension MainViewController: UITableViewDataSource {
     }
     
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        return 0
+        return credentialCollection.count
     }
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        guard let cell = tableView.dequeueReusableCell(withIdentifier: "PasswordCell", for: indexPath) as? TableViewCell else {
-            return UITableViewCell()
-        }
-        
+       let cell = tableView.dequeueReusableCell(withIdentifier: "CredentialsCell", for: indexPath)
        
-        
-        //cell.setUp(with: movie)
-        
+        cell.textLabel?.text = credentialCollection[indexPath.row].title
+
         return cell
     }
 }

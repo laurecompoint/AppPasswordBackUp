@@ -21,14 +21,10 @@ class CreateViewController: UIViewController {
         // Do any additional setup after loading the view.
     }
     
-    @IBAction func ShareDidBtnPresse(_ sender: Any) {
+    @IBAction func CancelBtnDidPress(_ sender: Any) {
+        dismiss(animated: true, completion: nil)
     }
-    @IBAction func CopieBtnDidPresse(_ sender: Any) {
-        
-        UIPasteboard.general.string = passwordTF.text
-    }
-    
-    @IBAction func ValidateDidPresse(_ sender: Any) {
+    @IBAction func SaveBtnDidPress(_ sender: Any) {
         guard let url = urlTF.text, url != "" else {
             presentAlert(title: "Attention !", message: "Vous n’avez pas renseigné de url !")
             return
@@ -37,7 +33,7 @@ class CreateViewController: UIViewController {
             presentAlert(title: "Attention !", message: "Vous n’avez pas renseigné de title !")
             return
         }
-
+        
         guard let nickname = nickname.text, nickname != "" else {
             presentAlert(title: "Attention !", message: "Vous n’avez pas renseigné de nickname !")
             return
@@ -64,16 +60,25 @@ class CreateViewController: UIViewController {
                 self.presentAlert(title: "error", message: error)
                 return
             }
-          
+              //navigé vers la page suivante
+             self.dismiss(animated: true, completion: nil)
+            
         }
-        //navigé vers la page suivante
-        performSegue(withIdentifier: "seguetomain", sender: nil)
+      
     }
-    private func presentAlert(title: String, message: String) {
-        let alertVC = UIAlertController(title: title, message: message, preferredStyle: .alert)
-        alertVC.addAction(UIAlertAction(title: "J’ai compris", style: .default, handler: nil))
-        present(alertVC, animated: true, completion: nil)
+    @IBAction func ShareDidBtnPresse(_ sender: Any) {
     }
+    @IBAction func CopieBtnDidPresse(_ sender: Any) {
+        
+        UIPasteboard.general.string = passwordTF.text
+    }
+    
+  
+//    private func presentAlert(title: String, message: String) {
+//        let alertVC = UIAlertController(title: title, message: message, preferredStyle: .alert)
+//        alertVC.addAction(UIAlertAction(title: "J’ai compris", style: .default, handler: nil))
+//        present(alertVC, animated: true, completion: nil)
+//    }
     /*
     // MARK: - Navigation
 

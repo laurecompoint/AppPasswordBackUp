@@ -1,0 +1,60 @@
+
+/* Class = "UITextField"; placeholder = "Title"; ObjectID = "0IY-fE-P3i"; */
+"0IY-fE-P3i.placeholder" = "Title";
+
+/* Class = "UITextField"; placeholder = "Email"; ObjectID = "0t8-AR-d6p"; */
+"0t8-AR-d6p.placeholder" = "Email";
+
+/* Class = "UIBarButtonItem"; title = "plus"; ObjectID = "2Gu-ec-ZZr"; */
+"2Gu-ec-ZZr.title" = "plus";
+
+/* Class = "UITextField"; placeholder = "Url"; ObjectID = "5pH-5F-hpI"; */
+"5pH-5F-hpI.placeholder" = "Url";
+
+/* Class = "UISegmentedControl"; 6jd-do-FFA.segmentTitles[0] = "Connexion"; ObjectID = "6jd-do-FFA"; */
+"6jd-do-FFA.segmentTitles[0]" = "Connexion";
+
+/* Class = "UISegmentedControl"; 6jd-do-FFA.segmentTitles[1] = "Inscription"; ObjectID = "6jd-do-FFA"; */
+"6jd-do-FFA.segmentTitles[1]" = "Inscription";
+
+/* Class = "UITextField"; placeholder = "Email"; ObjectID = "7Qx-JB-Re8"; */
+"7Qx-JB-Re8.placeholder" = "Email";
+
+/* Class = "UITextField"; placeholder = "Nickname"; ObjectID = "95s-fN-OwP"; */
+"95s-fN-OwP.placeholder" = "Nickname";
+
+/* Class = "UIButton"; normalTitle = "Se connecter"; ObjectID = "BW1-GC-vBB"; */
+"BW1-GC-vBB.normalTitle" = "Se connecter";
+
+/* Class = "UILabel"; text = "Label"; ObjectID = "CMf-YD-cAK"; */
+"CMf-YD-cAK.text" = "Label";
+
+/* Class = "UITextField"; placeholder = "Password"; ObjectID = "CXh-R4-cdX"; */
+"CXh-R4-cdX.placeholder" = "Password";
+
+/* Class = "UIButton"; normalTitle = "Button"; ObjectID = "EeK-mA-OAL"; */
+"EeK-mA-OAL.normalTitle" = "Button";
+
+/* Class = "UIButton"; normalTitle = "Partager"; ObjectID = "LUd-nI-VpX"; */
+"LUd-nI-VpX.normalTitle" = "Partager";
+
+/* Class = "UIButton"; normalTitle = "Copier"; ObjectID = "TxG-Fu-YjD"; */
+"TxG-Fu-YjD.normalTitle" = "Copier";
+
+/* Class = "UILabel"; text = "Main view"; ObjectID = "ZuQ-WR-Nkd"; */
+"ZuQ-WR-Nkd.text" = "Main view";
+
+/* Class = "UINavigationItem"; title = "Bienvenue"; ObjectID = "bns-Tl-8iH"; */
+"bns-Tl-8iH.title" = "Bienvenue";
+
+/* Class = "UITextField"; placeholder = "Pseudo"; ObjectID = "ds2-oO-j1L"; */
+"ds2-oO-j1L.placeholder" = "Pseudo";
+
+/* Class = "UIBarButtonItem"; title = "Deconnexion"; ObjectID = "nJV-aE-7zP"; */
+"nJV-aE-7zP.title" = "Deconnexion";
+
+/* Class = "UITextField"; placeholder = "Password"; ObjectID = "ueq-vZ-Oik"; */
+"ueq-vZ-Oik.placeholder" = "Password";
+
+/* Class = "UIButton"; normalTitle = "sauvegarder"; ObjectID = "ypc-Sz-VAn"; */
+"ypc-Sz-VAn.normalTitle" = "sauvegarder";

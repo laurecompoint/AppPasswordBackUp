@@ -88,11 +88,7 @@ class AuthViewController: UIViewController {
         validateBtn.setTitle(title, for: .normal)
         nicknameTF.isHidden = isConnexionSegment
     }
-    private func presentAlert(title: String, message: String) {
-        let alertVC = UIAlertController(title: title, message: message, preferredStyle: .alert)
-        alertVC.addAction(UIAlertAction(title: "J’ai compris", style: .default, handler: nil))
-        present(alertVC, animated: true, completion: nil)
-    }
+   
 
 }
 

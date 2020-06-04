@@ -37,5 +37,28 @@ class FireDB {
         
         
     }
+    func getCredentialsCollection(completion: @escaping ([Credentials]?, String? ) -> Void){
+        //recuper uid
+        guard let uid = FireAuth().currentId else {
+            completion(nil, "Error: vous n'etez pas authentifié")
+            return
+        }
+        users.document(uid).collection("credentialscollection").addSnapshotListener { (snapshot, error) in
+            if let error = error {
+                completion(nil, error.localizedDescription)
+                return
+            }
+            guard let snapshot = snapshot else{
+                completion(nil, "error indetermine")
+                return
+            }
+            var credentialsCollection: [Credentials] = []
+            let documents = snapshot.documents
+            for document in documents {
+                credentialsCollection.append(Credentials(document: document))
+            }
+            completion(credentialsCollection, nil)
+        }
+    }
     
 }

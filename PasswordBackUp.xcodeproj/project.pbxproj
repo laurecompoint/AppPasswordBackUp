@@ -8,12 +8,13 @@
 
 /* Begin PBXBuildFile section */
 		2D0206B62463EF2F009CC663 /* MainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2D0206B52463EF2F009CC663 /* MainViewController.swift */; };
-		2D0CE0BB246D9627001D9F11 /* TableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2D0CE0BA246D9627001D9F11 /* TableViewCell.swift */; };
 		2D4830382451909300A45FDF /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2D4830372451909300A45FDF /* AppDelegate.swift */; };
 		2D48303A2451909300A45FDF /* AuthViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2D4830392451909300A45FDF /* AuthViewController.swift */; };
 		2D48303D2451909300A45FDF /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2D48303B2451909300A45FDF /* Main.storyboard */; };
 		2D48303F2451909500A45FDF /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 2D48303E2451909500A45FDF /* Assets.xcassets */; };
 		2D4830422451909500A45FDF /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2D4830402451909500A45FDF /* LaunchScreen.storyboard */; };
+		2D4E1FDC2488D05300F53087 /* ExtentionsUiViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2D4E1FDB2488D05300F53087 /* ExtentionsUiViewController.swift */; };
+		2D88103D247FB881006370DF /* Credentials.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2D88103C247FB881006370DF /* Credentials.swift */; };
 		2DA70F3824536A3A00BFFFF5 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 2DA70F3724536A3900BFFFF5 /* GoogleService-Info.plist */; };
 		2DB3E187245AC4A2005B2CCF /* FireAuth.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2DB3E186245AC4A2005B2CCF /* FireAuth.swift */; };
 		2DF45645246D25EE00E33D74 /* FireDB.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2DF45644246D25EE00E33D74 /* FireDB.swift */; };
@@ -23,7 +24,6 @@
 
 /* Begin PBXFileReference section */
 		2D0206B52463EF2F009CC663 /* MainViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainViewController.swift; sourceTree = "<group>"; };
-		2D0CE0BA246D9627001D9F11 /* TableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TableViewCell.swift; sourceTree = "<group>"; };
 		2D4830342451909300A45FDF /* PasswordBackUp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = PasswordBackUp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		2D4830372451909300A45FDF /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		2D4830392451909300A45FDF /* AuthViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthViewController.swift; sourceTree = "<group>"; };
@@ -31,6 +31,10 @@
 		2D48303E2451909500A45FDF /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		2D4830412451909500A45FDF /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		2D4830432451909500A45FDF /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		2D4E1FDB2488D05300F53087 /* ExtentionsUiViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExtentionsUiViewController.swift; sourceTree = "<group>"; };
+		2D88103A247FAC3B006370DF /* fr */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = fr; path = fr.lproj/Main.strings; sourceTree = "<group>"; };
+		2D88103B247FAC3B006370DF /* fr */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = fr; path = fr.lproj/LaunchScreen.strings; sourceTree = "<group>"; };
+		2D88103C247FB881006370DF /* Credentials.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Credentials.swift; sourceTree = "<group>"; };
 		2DA70F3724536A3900BFFFF5 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 		2DB3E186245AC4A2005B2CCF /* FireAuth.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FireAuth.swift; sourceTree = "<group>"; };
 		2DF45644246D25EE00E33D74 /* FireDB.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FireDB.swift; sourceTree = "<group>"; };
@@ -57,6 +61,7 @@
 			children = (
 				2DB3E186245AC4A2005B2CCF /* FireAuth.swift */,
 				2DF45644246D25EE00E33D74 /* FireDB.swift */,
+				2D88103C247FB881006370DF /* Credentials.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -65,7 +70,6 @@
 			isa = PBXGroup;
 			children = (
 				2D48303B2451909300A45FDF /* Main.storyboard */,
-				2D0CE0BA246D9627001D9F11 /* TableViewCell.swift */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -76,6 +80,7 @@
 				2D4830392451909300A45FDF /* AuthViewController.swift */,
 				2D0206B52463EF2F009CC663 /* MainViewController.swift */,
 				2DF4564E246D3BC100E33D74 /* CreateViewController.swift */,
+				2D4E1FDB2488D05300F53087 /* ExtentionsUiViewController.swift */,
 			);
 			path = Controler;
 			sourceTree = "<group>";
@@ -101,16 +106,24 @@
 		2D4830362451909300A45FDF /* PasswordBackUp */ = {
 			isa = PBXGroup;
 			children = (
+				2D88103E247FC1FF006370DF /* SupportingFile */,
 				2D1B8FD12461BB610047D024 /* Controler */,
 				2D1B8FD02461BB300047D024 /* View */,
 				2D1B8FCF2461BAF50047D024 /* Model */,
-				2D4830372451909300A45FDF /* AppDelegate.swift */,
-				2D48303E2451909500A45FDF /* Assets.xcassets */,
-				2D4830402451909500A45FDF /* LaunchScreen.storyboard */,
-				2DA70F3724536A3900BFFFF5 /* GoogleService-Info.plist */,
 				2D4830432451909500A45FDF /* Info.plist */,
 			);
 			path = PasswordBackUp;
+			sourceTree = "<group>";
+		};
+		2D88103E247FC1FF006370DF /* SupportingFile */ = {
+			isa = PBXGroup;
+			children = (
+				2DA70F3724536A3900BFFFF5 /* GoogleService-Info.plist */,
+				2D4830372451909300A45FDF /* AppDelegate.swift */,
+				2D4830402451909500A45FDF /* LaunchScreen.storyboard */,
+				2D48303E2451909500A45FDF /* Assets.xcassets */,
+			);
+			path = SupportingFile;
 			sourceTree = "<group>";
 		};
 		964C543A89A6411BCAB6F693 /* Frameworks */ = {
@@ -248,10 +261,11 @@
 			files = (
 				2DF45645246D25EE00E33D74 /* FireDB.swift in Sources */,
 				2D48303A2451909300A45FDF /* AuthViewController.swift in Sources */,
+				2D4E1FDC2488D05300F53087 /* ExtentionsUiViewController.swift in Sources */,
+				2D88103D247FB881006370DF /* Credentials.swift in Sources */,
 				2DF4564F246D3BC100E33D74 /* CreateViewController.swift in Sources */,
 				2D4830382451909300A45FDF /* AppDelegate.swift in Sources */,
 				2DB3E187245AC4A2005B2CCF /* FireAuth.swift in Sources */,
-				2D0CE0BB246D9627001D9F11 /* TableViewCell.swift in Sources */,
 				2D0206B62463EF2F009CC663 /* MainViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -263,6 +277,7 @@
 			isa = PBXVariantGroup;
 			children = (
 				2D48303C2451909300A45FDF /* Base */,
+				2D88103A247FAC3B006370DF /* fr */,
 			);
 			name = Main.storyboard;
 			sourceTree = "<group>";
@@ -271,6 +286,7 @@
 			isa = PBXVariantGroup;
 			children = (
 				2D4830412451909500A45FDF /* Base */,
+				2D88103B247FAC3B006370DF /* fr */,
 			);
 			name = LaunchScreen.storyboard;
 			sourceTree = "<group>";
@@ -282,6 +298,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_LOCALIZABILITY_NONLOCALIZED = YES;
 				CLANG_ANALYZER_NONNULL = YES;
 				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
 				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
@@ -343,6 +360,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_LOCALIZABILITY_NONLOCALIZED = YES;
 				CLANG_ANALYZER_NONNULL = YES;
 				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
 				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
