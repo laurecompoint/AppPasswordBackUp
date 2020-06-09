@@ -73,7 +73,10 @@ class CreateViewController: UIViewController {
         UIPasteboard.general.string = passwordTF.text
     }
     
-  
+    @IBAction func BtnEyes(_ sender: Any) {
+         self.passwordTF.isSecureTextEntry = self.passwordTF.isSecureTextEntry ? false : true
+    }
+    
 //    private func presentAlert(title: String, message: String) {
 //        let alertVC = UIAlertController(title: title, message: message, preferredStyle: .alert)
 //        alertVC.addAction(UIAlertAction(title: "J’ai compris", style: .default, handler: nil))

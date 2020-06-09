@@ -9,20 +9,28 @@
 import UIKit
 
 class DetailViewController: UIViewController {
-    var credentialCollection: Credentials!
-     @IBOutlet weak var titlepassword: UILabel!
-     @IBOutlet weak var emailpassword: UILabel!
-     @IBOutlet weak var nicknamepassword: UILabel!
-     @IBOutlet weak var passwordpassword: UILabel!
-     @IBOutlet weak var urlpassword: UILabel!
+    var credentialsCollection: Credentials!
+    
+    @IBOutlet weak var UrlTF: UITextField!
+    @IBOutlet weak var EmailTF: UITextField!
+    @IBOutlet weak var NicknameTF: UITextField!
+    @IBOutlet weak var titleTF: UITextField!
+    @IBOutlet weak var passwordTF: UITextField!
     override func viewDidLoad() {
         super.viewDidLoad()
-        titlepassword.text = credentialCollection.title
-        //emailpassword.text = credentialCollection.email
-        //nicknamepassword.text = credentialCollection.nickname
-        passwordpassword.text = credentialCollection.password
-        urlpassword.text = credentialCollection.url
-        // Do any additional setup after loading the view.
+        
+        //NicknameTF.text = credentialsCollection.nickname
+        passwordTF.text = credentialsCollection.password
+       // EmailTF.text = credentialsCollection.email
+        titleTF.text = credentialsCollection.title
+        UrlTF.text = credentialsCollection.url
+        
+        
+        navigationController?.setNavigationBarHidden(false, animated: true)
+    }
+
+    @IBAction func BtnEyesPassword(_ sender: Any) {
+         self.passwordTF.isSecureTextEntry = self.passwordTF.isSecureTextEntry ? false : true
     }
     
 
