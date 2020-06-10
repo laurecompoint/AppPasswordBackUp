@@ -19,9 +19,9 @@ class DetailViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        //NicknameTF.text = credentialsCollection.nickname
+        NicknameTF.text = credentialsCollection.nickname
         passwordTF.text = credentialsCollection.password
-       // EmailTF.text = credentialsCollection.email
+        EmailTF.text = credentialsCollection.email
         titleTF.text = credentialsCollection.title
         UrlTF.text = credentialsCollection.url
         

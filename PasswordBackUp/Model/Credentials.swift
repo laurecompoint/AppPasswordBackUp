@@ -15,6 +15,8 @@ struct Credentials{
     var title: String
     var password: String
     var url: String
+    var nickname: String
+    var email: String
     
     init(document: DocumentSnapshot){
         reference = document.reference
@@ -23,5 +25,7 @@ struct Credentials{
         title = data["title"] as? String ?? ""
         password = data["password"] as? String ?? ""
         url = data["url"] as? String ?? ""
+        nickname = data["nickname"] as? String ?? ""
+        email = data["email"] as? String ?? ""
     }
 }
